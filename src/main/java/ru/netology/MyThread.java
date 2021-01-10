@@ -13,7 +13,7 @@ public class MyThread extends Thread {
         while (!isInterrupted()) {
             System.out.println(getName() + " thread is working " + (System.currentTimeMillis() - start) + " millis! ");
             try {
-                Thread.sleep(1500);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 System.out.println(getName() + " thread is interrupted in a sleep period, after " + (System.currentTimeMillis() - start) + " millis. ");
                 return;
